@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeBlog Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Category</div>
+            <div id="nav-menu">
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                </ul>
+            </div>
+            <div id="hamburger">
+                <i class="ph ph-list" style="font-size: 1.5rem;"></i>
+            </div>
+        </nav>
+    </header>
+
+    <hr class="divider">
+
+    <section class="hero-title">
+        <h1>PRIME BLOGS</h1>
+    </section>
+
+    <hr class="divider" style="margin-top: 0; margin-bottom: 60px;">
+
+    <section class="container recent-posts" id="recent">
+        <h3 class="section-title">Recent blog posts</h3>
+
+        <div class="grid-2">
+            <a class="blog-card" href="#">
+                <div class="image-wrapper">
+                    <img src="https://images.pexels.com/photos/6115011/pexels-photo-6115011.jpeg" alt="chess"
+                        class="blog-image">
+                </div>
+                <div>
+                    <h3 class="blog-meta">Dwija • 1 Jan 2067</h3>
+                    <h1 class="blog-title">Playing Chess<i class="ph ph-arrow-up-right"></i></h1>
+                    <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                        tempora explicabo, commodi esse quis possimus?</p>
+                    <div class="tags">
+                        <span class="tag tag-1">Sport</span>
+                        <span class="tag tag-2">Trending</span>
+                        <span class="tag tag-3">Lifestyle</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="vertical-cards">
+                <a class="blog-card blog-card-horizontal" href="#">
+                    <div class="image-wrapper">
+                        <img src="img/chess.jpg" alt="chess" class="blog-image">
+                    </div>
+                    <div>
+                        <h3 class="blog-meta">Dwija • 1 Jan 2067</h3>
+                        <h1 class="blog-title" style="font-size: 1.5rem;">Love Chess</h1>
+                        <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+                            quaerat placeat ab! Laboriosam, maiores eos.</p>
+                        <div class="tags">
+                            <span class="tag tag-1">Sport</span>
+                            <span class="tag tag-3">Lifestyle</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="blog-card blog-card-horizontal" href="#">
+                    <div class="image-wrapper">
+                        <img src="https://images.pexels.com/photos/6114958/pexels-photo-6114958.jpeg" alt="chess"
+                            class="blog-image">
+                    </div>
+                    <div>
+                        <h3 class="blog-meta">Dwija • 1 Jan 2067</h3>
+                        <h1 class="blog-title" style="font-size: 1.5rem;">Love Chess</h1>
+                        <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+                            quaerat placeat ab! Laboriosam, maiores eos.</p>
+                        <div class="tags">
+                            <span class="tag tag-1">Sport</span>
+                            <span class="tag tag-3">Lifestyle</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <a href="#" class="blog-card blog-card-horizontal" style="margin-bottom: 60px;">
+            <div class="image-wrapper">
+                <img src="https://images.pexels.com/photos/6689070/pexels-photo-6689070.jpeg" alt="chess"
+                    class="blog-image ">
+            </div>
+            <div>
+                <h3 class="blog-meta">Dwija • 1 Jan 2067</h3>
+                <h1 class="blog-title">5 reasons why you should play chess</h1>
+                <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laboriosam
+                    numquam corrupti in optio illo, porro fugit reprehenderit? Itaque qui maiores, quibusdam ipsum
+                    libero veritatis!</p>
+                <div class="tags">
+                    <span class="tag tag-1">Sport</span>
+                    <span class="tag tag-3">Trending</span>
+                    <span class="tag tag-4">Lifestyle</span>
+                </div>
+            </div>
+        </a>
+
+        <h3 class="section-title">All blog posts</h3>
+
+        <div class="grid-3" id="blog-grid">
+        </div>
+
+        <div class="pagination-wrapper">
+            <div class="pagination-container">
+                <a href="#" class="nav-button" id="prev-btn">
+                    <i class="ph ph-arrow-left"></i>
+                    Previous
+                </a>
+
+                <nav class="pagination-nav" id="pagination-container">
+                </nav>
+
+                <a href="#" class="nav-button" id="next-btn">
+                    Next
+                    <i class="ph ph-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="about">
+            <h1>About Me</h1>
+            <img src="img/jpg.jpg" alt="icon">
+            <h4>I Made Rama Dwijaya - Primakara University</h4>
+        </div>
+
+    </section>
+
+    <footer>
+        <a>© 2025</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">Gitlab</a>
+        <a href="#">Facebook</a>
+        <a href="#">Gmail</a>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
