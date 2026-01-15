@@ -1,8 +1,18 @@
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
+const hamburgerIcon = hamburger.querySelector("i");
 
 hamburger.addEventListener("click", function () {
   navMenu.classList.toggle("active");
+  document.body.classList.toggle("menu-open");
+
+  if (navMenu.classList.contains("active")) {
+    hamburgerIcon.classList.remove("ph-list");
+    hamburgerIcon.classList.add("ph-x");
+  } else {
+    hamburgerIcon.classList.remove("ph-x");
+    hamburgerIcon.classList.add("ph-list");
+  }
 });
 
 const navLinks = document.querySelectorAll("#nav-menu a");
@@ -10,6 +20,9 @@ navLinks.forEach((link) => {
   link.addEventListener("click", function () {
     if (window.innerWidth <= 768) {
       navMenu.classList.remove("active");
+      document.body.classList.remove("menu-open");
+      hamburgerIcon.classList.remove("ph-x");
+      hamburgerIcon.classList.add("ph-list");
     }
   });
 });
