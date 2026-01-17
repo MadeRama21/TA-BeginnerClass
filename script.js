@@ -33,7 +33,7 @@ const blogData = [
     title: "Playing Chess",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laboriosam numquam corrupti in optio illo, porro fugit reprehenderit? Itaque qui maiores, quibusdam ipsum libero veritatis!",
     image: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800&h=500&fit=crop",
-    category: "Sport",
+    category: "Sport", 
     date: "1 Jan 2067",
     author: "Dwija",
   },
@@ -155,7 +155,7 @@ function renderPosts(page) {
     <div class="image-wrapper">
       <img src="${blog.image}" alt="${blog.title}" class="blog-image">
     </div>
-    <div class="blog-meta">
+    <div class="blog-author">
       <span>${blog.author}</span>
       •
       <span>${blog.date}</span>
@@ -163,7 +163,7 @@ function renderPosts(page) {
     <h3 class="blog-title">${blog.title}</h3>
     <p class="blog-description">${blog.description}</p>
     <div class="tags">
-      <span class="tag tag-1">${blog.category}</span>
+      <span class="tag tag-5">${blog.category}</span>
     </div>
     `
     BlogGrid.appendChild(blogCard)
