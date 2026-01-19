@@ -1,28 +1,25 @@
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 const hamburgerIcon = hamburger.querySelector("i");
+const navLinks = document.querySelectorAll("#nav-menu a");
 
-hamburger.addEventListener("click", function () {
-  navMenu.classList.toggle("active");
+function toggleMenu() {
+  const isOpen = navMenu.classList.toggle("active");
   document.body.classList.toggle("menu-open");
 
-  if (navMenu.classList.contains("active")) {
-    hamburgerIcon.classList.remove("ph-list");
-    hamburgerIcon.classList.add("ph-x");
+  if (isOpen) {
+    hamburgerIcon.classList.replace("ph-list", "ph-x");
   } else {
-    hamburgerIcon.classList.remove("ph-x");
-    hamburgerIcon.classList.add("ph-list");
+    hamburgerIcon.classList.replace("ph-x", "ph-list");
   }
-});
+}
 
-const navLinks = document.querySelectorAll("#nav-menu a");
+hamburger.addEventListener("click", toggleMenu);
+
 navLinks.forEach((link) => {
-  link.addEventListener("click", function () {
-    if (window.innerWidth <= 768) {
-      navMenu.classList.remove("active");
-      document.body.classList.remove("menu-open");
-      hamburgerIcon.classList.remove("ph-x");
-      hamburgerIcon.classList.add("ph-list");
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768 && navMenu.classList.contains("active")) {
+      toggleMenu(); // Panggil fungsi yang sama untuk menutup
     }
   });
 });
