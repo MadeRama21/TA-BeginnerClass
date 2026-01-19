@@ -19,7 +19,7 @@ hamburger.addEventListener("click", toggleMenu);
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     if (window.innerWidth <= 768 && navMenu.classList.contains("active")) {
-      toggleMenu(); // Panggil fungsi yang sama untuk menutup
+      toggleMenu();
     }
   });
 });
